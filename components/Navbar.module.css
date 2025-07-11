@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem 0 3rem;
+  background: transparent;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.navLinks li:hover a,
+.navLinks .active a {
+  color: #7c3aed;
+}
+
+.active a {
+  color: #7c3aed;
+}
+
+.menuIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  color: #222;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .navLinks {
+    display: none;
+  }
+  .menuIcon {
+    display: flex;
+  }
+} 

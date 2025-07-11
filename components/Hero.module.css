@@ -1,0 +1,18 @@
+.secondary {
+  background: #fff;
+  color: #222;
+  border: 3px solid #ddd;
+  padding: 0.8rem 1.7rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border 0.2s, color 0.2s, background 0.2s;
+  box-shadow: none;
+}
+
+.secondary:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+  background: #f6f5ff;
+} 

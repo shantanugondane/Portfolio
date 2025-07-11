@@ -1,0 +1,32 @@
+.projectsSection {
+  margin: 4rem 0 2rem 0;
+  padding: 0 6vw;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.purpleDot {
+  color: #7c3aed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .projectsSection {
+    padding: 0 3vw;
+  }
+} 

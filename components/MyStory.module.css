@@ -1,0 +1,40 @@
+.storySection {
+  margin: 4rem 0 2rem 0;
+  padding: 0 6vw;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 2.5rem;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.purpleDot {
+  color: #7c3aed;
+}
+
+.text {
+  color: #444;
+  font-size: 1.13rem;
+  max-width: 1100px;
+  margin: 0;
+  text-align: left;
+}
+
+.purple {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .storySection {
+    padding: 0 3vw;
+  }
+  .text {
+    font-size: 1rem;
+  }
+} 

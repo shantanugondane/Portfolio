@@ -1,0 +1,142 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 6vw 2rem 6vw;
+  background: #fff;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.left {
+  flex: 1;
+  min-width: 180px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navLinks a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover, .navLinks .active {
+  color: #7c3aed;
+}
+
+.center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+}
+
+.cta {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.purple {
+  color: #7c3aed;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary:hover {
+  background: #5b21b6;
+}
+
+.secondary {
+  background: #fff;
+  color: #222;
+  border: 2px solid #ddd;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border 0.2s, color 0.2s;
+}
+
+.secondary:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.right {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  filter: grayscale(1) brightness(0.7);
+  transition: filter 0.2s;
+}
+
+.socials img:hover {
+  filter: none;
+}
+
+.copyright {
+  color: #888;
+  font-size: 1rem;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 3vw 1.5rem 3vw;
+  }
+  .left, .center, .right {
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+  }
+  .right {
+    align-items: center;
+  }
+  .copyright {
+    text-align: center;
+  }
+} 

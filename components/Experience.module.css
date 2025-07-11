@@ -1,0 +1,152 @@
+.experienceSection {
+  margin: 4rem 0 2rem 0;
+  padding: 0 6vw;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.purpleDot {
+  color: #7c3aed;
+}
+
+.content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.companyListWrapper {
+  position: relative;
+  min-width: 170px;
+}
+
+.companyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 3px solid #e5e7eb;
+  min-width: 170px;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  left: -3px;
+  width: 3px;
+  background: #7c3aed;
+  border-radius: 2px;
+  transition: top 0.3s cubic-bezier(.4,0,.2,1), height 0.3s cubic-bezier(.4,0,.2,1);
+  z-index: 1;
+}
+
+.companyList li {
+  position: relative;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 1.15rem;
+  border-left: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  z-index: 2;
+  background: transparent;
+}
+
+.companyList li:hover {
+  color: #7c3aed;
+}
+
+.active {
+  color: #7c3aed !important;
+  font-weight: 600;
+  background: #f6f5ff;
+}
+
+.details {
+  flex: 1;
+  min-width: 0;
+}
+
+.role {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+.companyName {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.dates {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bullet {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.08rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.check {
+  color: #7c3aed;
+  font-size: 1.2rem;
+  margin-right: 0.7rem;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .companyListWrapper {
+    min-width: 0;
+  }
+  .companyList {
+    display: flex;
+    flex-direction: row;
+    border-left: none;
+    border-bottom: 3px solid #e5e7eb;
+    min-width: 0;
+    overflow-x: auto;
+    position: relative;
+  }
+  .indicator {
+    left: 0;
+    bottom: -3px;
+    top: auto !important;
+    width: 0;
+    height: 3px !important;
+    background: #7c3aed;
+    border-radius: 2px;
+    transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+  }
+  .companyList li {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.7rem 1.2rem;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .active {
+    background: #f6f5ff;
+  }
+} 
