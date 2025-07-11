@@ -17,7 +17,7 @@ export default function Home() {
           </h1>
           <p className={styles.description}>
             I&apos;m a Fullstack developer based in Mumbai, I&apos;ll help you build beautiful websites your users will love.
-          </p>
+            / The website is still under maintenance</p>
           <div className={styles.buttons}>
             <a href="mailto:shantanugondane44@gmail.com" className={styles.primary}>Get In Touch</a>
             <button className={styles.secondary}>Browse Projects</button>
