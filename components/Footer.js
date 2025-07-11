@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -21,10 +22,10 @@ export default function Footer() {
       </div>
       <div className={styles.right}>
         <div className={styles.socials}>
-          <a href="https://www.instagram.com/shantanu.spaceship/?igsh=ZW1qN3g4bWtoNnQ2&utm_source=qr#"><img src="/instagram-svgrepo-com.svg" alt="Instagram" /></a>
-          <a href="https://www.linkedin.com/in/shantanu-gondane-46456822b/"><img src="/linkedin-svgrepo-com.svg" alt="LinkedIn" /></a>
-          <a href="https://github.com/shantanugondane"><img src="/github-svgrepo-com.svg" alt="GitHub" /></a>
-          <a href="https://dribbble.com/shantanugondane"><img src="/dribbble-svgrepo-com.svg" alt="Dribbble" /></a>
+          <a href="https://www.instagram.com/shantanu.spaceship/?igsh=ZW1qN3g4bWtoNnQ2&utm_source=qr#"><Image src="/instagram-svgrepo-com.svg" alt="Instagram" width={26} height={26} /></a>
+          <a href="https://www.linkedin.com/in/shantanu-gondane-46456822b/"><Image src="/linkedin-svgrepo-com.svg" alt="LinkedIn" width={26} height={26} /></a>
+          <a href="https://github.com/shantanugondane"><Image src="/github-svgrepo-com.svg" alt="GitHub" width={26} height={26} /></a>
+          <a href="https://dribbble.com/shantanugondane"><Image src="/dribbble-svgrepo-com.svg" alt="Dribbble" width={26} height={26} /></a>
         </div>
         <div className={styles.copyright}>
           ©2023 All Rights Reserved.<br />

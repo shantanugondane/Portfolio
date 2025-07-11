@@ -11,7 +11,7 @@ const ProjectCard = ({ title, description, image, link }) => (
       <div className={styles.titleRow}>
         <span className={styles.title}>{title}</span>
         <a href={link} target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-          <img src="/right-arrow-next-svgrepo-com.svg" alt="Open" className={styles.icon} />
+          <Image src="/right-arrow-next-svgrepo-com.svg" alt="Open" className={styles.icon} width={22} height={22} />
         </a>
       </div>
       <p className={styles.description}>{description}</p>
