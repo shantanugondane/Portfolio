@@ -2,7 +2,7 @@ import styles from './Hero.module.css';
 import Projects from '../../components/Projects';
 import Experience from '../../components/Experience';
 // import Skills from '../../components/Skills';
-// import MyStory from '../../components/MyStory';
+import MyStory from '../../components/MyStory';
 import Image from 'next/image';
 
 export default function Home() {
@@ -31,8 +31,7 @@ export default function Home() {
       </section>
       <Projects />
       <Experience />
-      {/* <Skills />
-      <MyStory /> */}
+      <MyStory />
     </>
   );
 }
