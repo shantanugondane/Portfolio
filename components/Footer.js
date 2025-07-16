@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div className={styles.copyright}>
           ©2023 All Rights Reserved.<br />
-          Made with <span className={styles.purple}>💜</span> by Shnatnu Gondane
+          Made with <span className={styles.purple}>💜</span> by Shantanu Gondane
         </div>
       </div>
     </footer>
