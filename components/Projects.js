@@ -7,7 +7,7 @@ const projects = [
     title: 'Learnify',
     description: 'Learnify is a smart placement preparation and learning platform designed to streamline student upskilling.',
     image: '/learnify1.png',
-    link: '/projects/taskflow',
+    link: '/projects/learnify',
   },
   {
     title: 'LegAIly',
