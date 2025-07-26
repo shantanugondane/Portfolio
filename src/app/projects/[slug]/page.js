@@ -1,7 +1,6 @@
 "use client";
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import { Card } from 'aceternity-ui';
 import { motion } from "framer-motion";
 
 export default function ProjectDetail() {
