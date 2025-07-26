@@ -1,16 +1,18 @@
 import EnhancedHero from '../../components/EnhancedHero';
-import Projects from '../../components/Projects';
-import Experience from '../../components/Experience';
+import GlobalBackground from '../../components/GlobalBackground';
+import EnhancedProjects from '../../components/EnhancedProjects';
+import EnhancedExperience from '../../components/EnhancedExperience';
 // import Skills from '../../components/Skills';
-import MyStory from '../../components/MyStory';
+import EnhancedMyStory from '../../components/EnhancedMyStory';
 
 export default function Home() {
   return (
     <>
+      <GlobalBackground />
       <EnhancedHero />
-      <Projects />
-      <Experience />
-      <MyStory />
+      <EnhancedProjects />
+      <EnhancedExperience />
+      <EnhancedMyStory />
     </>
   );
 }
