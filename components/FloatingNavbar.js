@@ -50,7 +50,7 @@ const FloatingNavbar = () => {
   ];
 
   return (
-    <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
+    <div className="fixed top-4 md:top-8 left-1/2 transform -translate-x-1/2 z-50">
       <FloatingDock 
         items={navItems}
         desktopClassName="bg-gray-900/80 backdrop-blur-md border border-gray-700/50"
