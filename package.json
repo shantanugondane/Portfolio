@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^3.34.1",
+    "aceternity-ui": "^0.2.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.6",
     "motion": "^12.23.9",
