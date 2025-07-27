@@ -39,7 +39,7 @@ const EnhancedFooter = () => {
   ];
 
   return (
-    <footer className="relative bg-black border-t border-gray-800/50">
+    <footer className="relative bg-black border-t border-gray-800/50 safe-bottom">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-t from-purple-900/5 to-transparent"></div>
       

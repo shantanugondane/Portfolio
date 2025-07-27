@@ -48,10 +48,10 @@ const EnhancedProjects = () => {
   ];
 
   return (
-    <section id="projects" className="relative min-h-screen py-20 bg-black">
+    <section id="projects" className="relative min-h-screen py-20 bg-black safe-top safe-bottom">
       {/* Section Header */}
       <motion.div 
-        className="text-center mb-16"
+        className="text-center mb-16 px-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
