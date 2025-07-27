@@ -61,6 +61,8 @@ const FloatingDockMobile = ({
                   key={item.title}
                   className="flex h-12 w-full items-center justify-start gap-3 rounded-lg bg-gray-900/95 backdrop-blur-md border border-gray-700/50 px-4 py-2 hover:bg-gray-800/95 transition-colors duration-200"
                   onClick={() => setOpen(false)}
+                  target={item.href.includes('.pdf') ? '_blank' : undefined}
+                  download={item.href.includes('.pdf') ? true : undefined}
                 >
                   <div className="h-5 w-5 text-gray-300">{item.icon}</div>
                   <span className="text-sm text-gray-300 font-medium">{item.title}</span>
@@ -150,7 +152,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
  
   return (
-    <a href={href}>
+    <a href={href} target={href.includes('.pdf') ? '_blank' : undefined} download={href.includes('.pdf') ? true : undefined}>
       <motion.div
         ref={ref}
         style={{ width, height }}

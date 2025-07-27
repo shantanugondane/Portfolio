@@ -31,7 +31,7 @@ const FloatingNavbar = () => {
     {
       title: "Resume",
       icon: <IconFileText className="h-5 w-5" />,
-      href: "/resume.pdf"
+      href: "/Shantanu_Gondane_8169405067_Resume.pdf"
     },
     {
       title: "Contact",
