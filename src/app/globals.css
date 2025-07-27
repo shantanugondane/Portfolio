@@ -78,10 +78,54 @@ body {
   body {
     min-height: 100vh;
     min-height: 100dvh; /* Dynamic viewport height for mobile */
+    overflow-x: hidden;
   }
   
   /* Prevent horizontal overflow */
   .floating-dock {
     max-width: calc(100vw - 2rem);
+  }
+  
+  /* Better mobile spacing */
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  
+  /* Fix for floating elements */
+  .fixed {
+    position: fixed;
+  }
+  
+  /* Ensure proper z-index stacking */
+  .z-50 {
+    z-index: 50;
+  }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+  /* Smaller text for very small screens */
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+  
+  /* Better button sizing */
+  .px-8 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

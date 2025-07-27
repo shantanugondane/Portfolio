@@ -7,7 +7,8 @@ import {
   IconMail,
   IconBrandGithub,
   IconBrandLinkedin,
-  IconBrandInstagram
+  IconBrandInstagram,
+  IconFileText
 } from '@tabler/icons-react';
 
 const FloatingNavbar = () => {
@@ -26,6 +27,11 @@ const FloatingNavbar = () => {
       title: "About",
       icon: <IconUser className="h-5 w-5" />,
       href: "#experience"
+    },
+    {
+      title: "Resume",
+      icon: <IconFileText className="h-5 w-5" />,
+      href: "/resume.pdf"
     },
     {
       title: "Contact",
@@ -54,7 +60,7 @@ const FloatingNavbar = () => {
       <FloatingDock 
         items={navItems}
         desktopClassName="bg-gray-900/80 backdrop-blur-md border border-gray-700/50"
-        mobileClassName="fixed top-4 right-4 safe-top safe-right"
+        mobileClassName="fixed top-4 right-4 safe-top safe-right ml-auto"
       />
     </div>
   );
